@@ -41,6 +41,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+main {
+    padding: 20px;
+    background-color: white;
+}
 footer {
     background-color:rgb(1, 66, 1);
     color:white;
