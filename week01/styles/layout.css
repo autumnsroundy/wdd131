@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color:darkgreen;
+    background-color:rgb(1, 66, 1);
     color:white;
     padding: 20px;
 }
@@ -39,4 +39,12 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background-color:rgb(1, 66, 1);
+    color:white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
