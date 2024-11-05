@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color:rgb(1, 66, 1);
+    background-color:rgb(41, 88, 139);
     color:white;
     padding: 20px;
 }
@@ -46,7 +46,7 @@ main {
     background-color: white;
 }
 footer {
-    background-color:rgb(1, 66, 1);
+    background-color:rgb(41, 88, 139);
     color:white;
     padding: 20px;
     display: flex;
