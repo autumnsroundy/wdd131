@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" intial-scale="1.0">
-        <title>WDD 131 - Dynamic Web fundamentals - Autumn Roundy</title>
         <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Autumn Roundy. Introducing myself for the semester while demonstrating my web development knowledge in coding HTML, CSS, and JavaScript.">
         <meta name="author" content="Autumn Roundy">
+        <title>WDD 131 - Dynamic Web fundamentals - Autumn Roundy</title>
         <link rel="stylesheet" href="styles/base.css">
-        <script src="scripts/getdates.js" defer></script>
     </head>
     <body>
         <header>
@@ -45,16 +44,21 @@
                 <img src="images/harbor.jpg" alt="Bar Harbor, Ketchikan, AK at high tide and golden hour." width="100">
 
             </section>
-            <section class="card">
+            <section class="resources">
                 <h2>Web Dev Resources</h2>
                 
             </section>
         </main>
     
-    
         <footer>
-            <p><span id="2024"></span> ©2024 🧜‍♀️ Autumn Roundy 🧜‍♀️ Alaska, USA </p>
-            <p id="lastModified"></p>
+            <section class="footer">
+            <p>©<span id="currentyear"></span>🧜‍♀️ Autumn Roundy 🧜‍♀️ Alaska, USA</p>
+            <p style="color:rgb(250, 247, 46)" id="lastModified"></p>
+            </section>
         </footer>
+        <script>
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+        </script>
     </body>
 </html>

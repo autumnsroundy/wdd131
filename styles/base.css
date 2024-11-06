@@ -14,10 +14,10 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 20px;
     background-color:rgb(41, 88, 139);
     color:white;
-    padding: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 nav {
@@ -26,12 +26,13 @@ nav {
 }
 
 nav ul {
+    margin-top: 15px;
     list-style-type: none;
     display: flex;
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
@@ -45,7 +46,7 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr; /*two equal columns*/
+    grid-template-columns: 1fr 1fr 1fr; /*three equal columns*/
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;  /*center grid horizontally*/
@@ -53,9 +54,16 @@ main {
     margin-bottom: 20px;
     background-color: rgb(227, 227, 222);
 }
-
+.card {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.card img {
+    display: block;
+    margin: 10px 0;
+}
 main h2 {
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -63,10 +71,14 @@ main h3 {
     text-align: center;
     margin-bottom: 10px;
 }
+
 footer {
     background-color:rgb(41, 88, 139);
-    color:white;
+    color:rgb(251, 251, 251);
     padding: 20px;
     display: flex;
     justify-content: center;
+}
+footer {
+    text-align: center;
 }
