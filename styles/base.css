@@ -108,6 +108,16 @@ main h3 {
 .resources h2 {
     text-align: center;
 }
+.resources-links {
+    text-align: center;
+}    
+.resources-links a {
+    color:rgb(41, 88, 139);
+}
+.resources-links :hover {
+    text-decoration: underline;
+    color:rgb(250, 247, 46);
+}
 
 footer {
     background-color:rgb(41, 88, 139);
