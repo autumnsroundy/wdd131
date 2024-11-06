@@ -111,6 +111,7 @@ main h3 {
 .resources-links {
     text-align: center;
     list-style-position: inside;
+    padding: 20px;
 }    
 .resources-links a {
     color:rgb(41, 88, 139);
