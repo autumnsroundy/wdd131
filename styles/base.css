@@ -42,6 +42,7 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
+    color: rgb(250, 247, 46);
 }
 
 main {
@@ -58,18 +59,45 @@ main {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-.card img {
-    display: block;
-    margin: 10px 0;
+
+.image-text-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.image-text-container img {
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+}
+.image-text-container p {
+    margin: 0;
+}
+
+.image-text-container-two {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.image-text-container-two img {
+    margin-left: 20px;
+    width: 150px;
+    height: auto;
+}
+.image-text-container-two p {
+    text-align: left;
 }
 main h2 {
-    text-align: left;
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 main h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+}
+.resources h2 {
+    text-align: center;
 }
 
 footer {
@@ -78,7 +106,5 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: center;
-}
-footer {
     text-align: center;
 }
