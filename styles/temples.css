@@ -33,13 +33,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color:indianred;
+    color:rgb(0, 84, 84);
     text-decoration: none;
     font-weight: 600;
 }
 
 nav ul li a:hover {
-    color: darksalmon
+    color: indianred;
 }
 
 main {
@@ -72,4 +72,13 @@ figcaption {
     font-weight: 600;
     color:darkcyan;
     margin-top: 10px;
+}
+
+footer {
+    background-color:darksalmon;
+    color:rgb(0, 84, 84);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
