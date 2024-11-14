@@ -51,8 +51,9 @@ main {
 
 h1 {
     font-family: "Afacad Flux", sans-serif;
-    font-size: 2rem;
-    color:blanchedalmond;
+    font-size: 800;
+    text-align: center;
+    color:rgb(0, 84, 84);
     margin-bottom: 20px;
 }
 
