@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 .preconnect {
     font-family: "Afacad Flux", sans-serif;
-
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
@@ -51,7 +50,7 @@ main {
 
 h1 {
     font-family: "Afacad Flux", sans-serif;
-    font-size: 800;
+    font-size: 50px;
     text-align: center;
     color:rgb(0, 84, 84);
     margin-bottom: 20px;
