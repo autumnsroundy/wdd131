@@ -50,3 +50,21 @@ h2, h3 {
   width: 100%; /*making sure the image fills the span*/
   height: 100%;
 }
+/* Default for larger screens */
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 1024px) {
+  .hero-image {
+      width: 80%; /* Adjust the width as needed for smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-image {
+      width: 100%; /* Full width for smaller mobile screens */
+  }
+}
