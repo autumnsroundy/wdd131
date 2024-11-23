@@ -36,45 +36,71 @@ h2, h3 {
   color:var(--white);
 }
 
-.weather-icon {
-  display: inline-block; /*making sure span behaves as a bloock element*/
-  width: 50px;
-  height: 50px;
-}
-.weather-icon img {
-  width: 100%;
-  height: 100%;
-}
 main {
   position: relative;
+  width: 100%;
+  height: 100vh; /* Make sure the container takes up the FULL viewport height*/
+  overflow: hidden; /* If image is larger than the container this prevents overflow*/
 }
 .hero img {
   width: 100%;
-  height: auto;
-  position: relative;
+  height: 100%;
+  object-fit: cover; /*ensures the image fills container while maintaining aspect ratio*/
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+/*Data section styling*/
 .data {
   position: absolute;
   top: 20px; /* Space from the top */
   left: 20px; /* Space from the left */
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.815);
   color: white;
   padding: 20px;
   border-radius: 5px;
 }
+.data::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark-magenta);
+  margin-top: 20px;
+}
+.data, .weather {
+  max-width: 90%;
+}
+
+/* Weather section styling */
 .weather {
   position: absolute;
-  bottom: 20px; /* Space from the bottom */
-  right: 20px; /* Space from the right */
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white; 
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
   padding: 20px;
   border-radius: 5px;
 }
 
-.data, .weather {
-  max-width: 90%;
+h3::after {
+  content: url('images/weathericon.svg');
+  display: inline-block;
+  margin-left: 8px;
+  width: 50px;
+  height: 50px;
 }
+.weather::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark-magenta);
+  margin-top: 20px;
+}
+
+
 /* For screens smaller than 1024px */
 @media screen and (max-width: 1024px) {
   .hero-image {

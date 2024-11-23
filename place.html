@@ -17,11 +17,13 @@
          <h1>Alaska</h1>
     </header>
     <main>
+        <section class="hero">
         <img 
             srcset="images/hero_small.webp 480w, images/hero_large.webp 1200w"
             sizes="(max-width: 600px) 480px, (max-width: 1024px) 800px, 1200px"
             src="images/hero_large.webp" 
             alt="Hero Image" />
+        </section>
 
         <section class="data">
             <h2>Data</h2>
@@ -37,14 +39,11 @@
         </section>
         <section class="weather">
             <h3>Weather</h3>
-            <span class="weather-icon">
-                <img src="images/weather-icon.svg" alt="weather icon"/>
-            </span>
             <p>Temperature: <span id="temperature">4°C</span></p>
             <p>Conditions: Partly cloudy with light rain</p>
             <p>Wind Speed: <span id="windspeed">11 km/h</span></p>
             <p id="windchill">Wind Chill: Calculating...</p>
-        </section>
+          </section>
     </main>
     <footer>
         <div class="footer">
