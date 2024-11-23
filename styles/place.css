@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+:root {
+  --primary-blue: #687E8C;
+  --light-blue: #b7c8d6;
+  --primary-beige:#e3dc9b;
+  --yellow:#dcca2a;
+  --dark-magenta: #c32589;
+  --white: #FFFFFF;
+  --black: #000000;
+
+  --font-family: 'Afacad Flux', sans-serif;
+}
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-blue);
+  color: var(--black);
+}
+header, footer {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-align: center;
+}
+h1 {
+  font-size: 75pt;
+  padding: 10px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  padding: 20px;
+}
+footer {
+  padding: 20px;
+}
+h2, h3 {
+  font-size: 30pt;
+  color:var(--white);
+}

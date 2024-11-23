@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Place - Autumn Roundy</title>
+    <meta name="description" content="WDD 131 place of residence to test knowledge on this weeks objectives">
+    <meta name="author" content="Autumn Roundy">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place_large.css">
+</head>
+<body>
+    <header>
+         <h1>Alaska</h1>
+    </header>
+    <main>
+        <img
+        src="images/hero_small.webp"
+        srcset="images/hero_small.webp 480w, images/hero_large.webp 1200w"
+        sizes="(max-width: 600px) 480px, (max-width: 1024px) 800px, 1200px"
+        alt="Hero Image" />
+        <section class="data">
+            <h2>Data</h2>
+            <p>Population: 733,406</p>
+            <p>Area: 665,384 square miles</p>
+            <p>captial: Juneau</p>
+            <p>Languages: English, Spanish, Russian, Hawaiian,</p>
+            <p>Tagalog, Inuit-Yupik-Ongan, Aluet, & Athabaskan</p>
+            <p>Currency: American dollars</p>
+            <p>Time-zone: GMT-9, Alaska Standard Time</p>
+            <p>Area Code: 907</p>
+            <p>Internet TLD: .ak</p>
+        </section>
+        <section class="weather">
+            <h3>Weather</h3>
+            <p>Temperature: <span id="temperature">4°C</span></p>
+            <p>Wind Speed: <span id="windspeed">11 km/h</span></p>
+            <p id="windchill">Wind Chill: Calculating...</p>
+            <span class="weather-icon"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+        <p>©<span id="currentyear"></span>🧜‍♀️ Autumn Roundy 🧜‍♀️ Alaska, USA</p>
+        <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/place.js" defer></script>  
+</body>
+</html>
