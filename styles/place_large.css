@@ -1,0 +1,19 @@
+/* For screens smaller than 1024px */
+@media screen and (max-width: 1024px) {
+    .hero-image {
+      width: 80%;  /* Adjust width to 80% for medium screens */
+    }
+    .data, .weather {
+      max-width: 100%;
+    }
+  }
+  
+  /* For screens smaller than 600px */
+  @media screen and (max-width: 600px) {
+    .hero-image {
+      width: 100%;
+    }
+    .data, .weather {
+      padding: 15px;
+    }
+  }

@@ -25,28 +25,19 @@ h1 {
   padding: 10px;
   margin-top: 0;
   margin-bottom: 20px;
-}
-h1::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: var(--yellow);
-}
-
-footer {
-  padding: 20px;
+  border-bottom: 3px solid var(--yellow);
 }
 
 main {
   position: relative;
   width: 100%;
   height: 100vh; /* Make sure the container takes up the FULL viewport height*/
-  overflow: hidden; /* If image is larger than the container this prevents overflow*/
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto;   /* Allow vertical scrolling */
 }
 .hero img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover; /*ensures the image fills container while maintaining aspect ratio*/
   position: absolute;
   top: 0;
@@ -75,15 +66,16 @@ h2, h3 {
 
 /*Data specific styling*/
 .data {
+  position: absolute;
   top: 40px;  /* Position it 20px from the top of the parent container */
   left: 20px; /* Position it 20px from the left of the parent container */
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.815);
   color: white;
   padding: 20px;
   border-radius: 5px;
 }
-.data::after {
+.data::after,
+.weather::after {
   content: "";
   display: block;
   width: 100%;
@@ -103,37 +95,11 @@ h2, h3 {
   border-radius: 5px;
 }
 .weather-icon {
-  width: 30px;  /* Set the width of the icon */
-  height: 30px; /* Set the height of the icon */
+  width: 50px;  /* Set the width of the icon */
+  height: 50px; /* Set the height of the icon */
   vertical-align: middle; /* Align the icon vertically with the text */
   margin-left: 10px; 
 }
-.weather::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--yellow);
-  margin-top: 20px;
-}
-
-
-/* For screens smaller than 1024px */
-@media screen and (max-width: 1024px) {
-  .hero-image {
-      width: 80%;  /* Adjust width to 80% for medium screens */
-  }
-  .data, .weather {
-    max-width: 100%;
-  }
-}
-
-/* For screens smaller than 600px */
-@media screen and (max-width: 600px) {
-  .hero-image {
-      width: 100%; /* Adjust width to 100% for smaller mobile screens */
-  }
-  .data, .weather {
-    padding:15px;
-  }
+footer {
+  padding: 20px;
 }
