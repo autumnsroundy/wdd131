@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-color:blanchedalmond;
-    color:darkcyan;
+    color: rgb(0, 84, 84);
 }
 
 header {
@@ -81,11 +81,11 @@ h1 {
 
 .temple-card h2 {
     font-size: 24px;
-    color: #333;
+    color: rgb(0, 84, 84);
 }
 
 .temple-card p {
-    color: #555;
+    color: black;
     font-size: 16px;
 }
 
