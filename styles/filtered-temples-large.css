@@ -1,11 +1,34 @@
+/* Base layout (mobile-first) */
+#templeCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* For screens wider than 600px: 2 cards per row */
 @media (min-width: 600px) {
-    .temple-gallery {
-        grid-template-columns: repeat(2, 1fr);
+    #templeCardsContainer {
+        justify-content: space-between;
+    }
+    .temple-card {
+        width: 45%; /* Adjust to fit two cards per row */
     }
 }
 
+/* For screens wider than 900px: 3 cards per row */
 @media (min-width: 900px) {
-    .temple-gallery {
-        grid-template-columns: repeat(3, 1fr);
+    .templeCardsContainer {
+        justify-content: space-between;
+    }
+    .temple-card {
+        width: 30%; /* Adjust to fit three cards per row */
+    }
+}
+
+/* For screens wider than 1200px: 4 cards per row */
+@media (min-width: 1200px) {
+    .temple-card {
+        width: 22%; /* Adjust to fit four cards per row */
     }
 }
