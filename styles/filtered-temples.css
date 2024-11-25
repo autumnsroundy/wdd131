@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+.preconnect {
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:blanchedalmond;
+    color:darkcyan;
+}
+
+header {
+    background-color:darksalmon;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:rgb(0, 84, 84);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: indianred;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color:rgb(0, 84, 84);
+    margin-bottom: 20px;
+}
+
+#templeCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.temple-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+}
+
+.temple-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 200px;
+    lazy-load: true;
+}
+
+.temple-card h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.temple-card p {
+    color: #555;
+    font-size: 16px;
+}
+
+footer {
+    background-color:darksalmon;
+    color:rgb(0, 84, 84);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
