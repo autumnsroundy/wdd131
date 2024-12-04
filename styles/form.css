@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
-.preconnect {
-    font-family: "Afacad Flux", sans-serif;
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
-  }
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,25 +10,34 @@
 
 /* Body styling */
 body {
-    background-color:#f0f0f0;
+    font-family: "Afacad Flux", sans-serif; /* Applied font globally */
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    background-color: #f0f0f0;
     margin: 20px;
     font-size: 16px;
 }
+
+/* Label styling */
 label {
     font-size: 16px;
     font-weight: bold;
     color: #333;
-    display: block; 
-    margin-bottom: 5px; 
+    display: block;
+    margin-bottom: 5px;
 }
-fieldset-2 label {
-    font-weight: normal;  /* Remove boldness from Useful Features section labels */
+
+/* Fieldset label customization for rating section */
+fieldset label {
+    font-weight: normal; /* Remove boldness from Useful Features section labels */
 }
+
 /* Header */
 header {
     text-align: center;
-    background-color:rgb(136, 166, 197);
-    color:white;
+    background-color: rgb(136, 166, 197);
+    color: white;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -49,35 +53,27 @@ form {
 }
 
 /* Input and select fields */
-input {
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+
 textarea {
     resize: vertical;
     margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
 }
 
 /* Fieldset for rating and features */
-
 fieldset {
-    border: none; /* Optional: remove the border from the fieldset */
-    display: flex; /* Use flexbox for horizontal alignment */
+    border: none;
+    display: flex; /* Flexbox for horizontal alignment */
     gap: 15px;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -87,14 +83,16 @@ label {
     cursor: pointer;
 }
 
+/* Legend styling */
 legend {
     font-weight: bold;
     font-size: 20px;
 }
 
+/* Footer styling */
 footer {
-    background-color:rgb(136, 166, 197);
-    color:rgb(251, 251, 251);
+    background-color: rgb(136, 166, 197);
+    color: rgb(251, 251, 251);
     padding: 20px;
     width: 100%;
     display: flex;
