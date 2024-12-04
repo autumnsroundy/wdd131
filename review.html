@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+</head>
+<body>
+    <header>
+        <h1>Review Confirmation</h1>
+    </header>
+
+    <main>
+        <h2>Your Review has been submitted successfully!</h2>
+        <p><strong>Product Name:</strong> <span id="product-name"></span></p>
+        <p><strong>Rating:</strong> <span id="rating"></span></p>
+        <p><strong>Date of Installation:</strong> <span id="installation-date"></span></p>
+        <p><strong>Useful Features:</strong> <span id="useful-features"></span></p>
+        <p><strong>Written Review:</strong> <span id="written-review"></span></p>
+        <p><strong>Your Name:</strong> <span id="user-name"></span></p>
+    </main>
+
+    <script>
+        // Retrieve form data from the URL query string and display it
+        const params = new URLSearchParams(window.location.search);
+        
+        document.getElementById('product-name').textContent = params.get('product-name');
+        document.getElementById('rating').textContent = params.get('rating');
+        document.getElementById('installation-date').textContent = params.get('installation-date');
+        document.getElementById('useful-features').textContent = params.get('features') || 'None';
+        document.getElementById('written-review').textContent = params.get('written-review') || 'No review provided';
+        document.getElementById('user-name').textContent = params.get('user-name') || 'Anonymous';
+    </script>
+</body>
+</html>
