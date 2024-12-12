@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {  /*color template sharkDark palette*/
+    --primary-blue: #124559;
+    --light-blue: #598392;
+    --sage-green:#aec3b0;
+    --background-color: #dad8d8;
+    --white: #FFFFFF;
+    --text-color: #01161e;
+
+         /*font information and default*/
+    --font-family: 'Afacad Flux', sans-serif;
+  }
+
+header {
+    background-color:var(--background-color);
+}
+
+/*Style for the Nav Container in the Header*/
+.nav {
+    color: var(--primary-blue);
+    display: flex;
+}
+/*Style for the list*/
+nav ul {
+    margin-top: 15px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /*Right align the ENTIRE navbar*/
+}
+/*Style for each list item*/
+nav li {
+    margin: 0 15px;
+}
+/*Style for the links*/
+nav a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right; /*Align the text inside the link to the right */
+}
+/*Style for the hover affects*/
+nav a:hover {
+    text-decoration: underline;
+    color:var(--white);
+}
+
+/*----------completed look above this line-------------*/
+
+body {
+    font-family: 'Afacad Flux', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+
+/*------------------------Shark-Safety--------------------------*/
+.sharksafety {
+    display: flex;
+    justify-content: space-between;      /*ensures space between text and image*/
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.sharksafety .text {
+    background-color: var(--primary-blue);
+    color:var(--white);
+    padding: 20px;
+    box-sizing: border-box; 
+    flex: 1;                /*take as much width as possible*/
+    min-width: 250px; 
+    display: flex;          /* Make the container a flex container */
+    flex-direction: column;
+}
+.sharksafety h1 {
+    margin-bottom: 10px; /*space between h1 and text*/
+}
+.sharksafety .heroimage {
+    width: 100%;
+    height: auto;
+    max-width: 600px;            /*limit image size*/
+    text-align: center;          /* Center the image */
+    flex: 2;                    /*image takes up 2nd and 3rd columns*/
+}
+/*------------------------Dangerous-Species--------------------------*/
+.dangerousspecies {
+    text-align: center;
+}
+figure {
+    display: inline-block;
+    margin: 30px;           /* Adds margin between the images */
+    text-align: center;     /* Centers the caption */
+}
+figure img {
+    width: 100%;            /* Makes images responsive */
+    max-width: 400px;       /* Limits the maximum size of images */
+    height: auto;
+    border-radius: 8px;
+}
+figcaption {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-top: 10px;       /* Adds space between image and caption */
+    display: block;         /* Ensures each part of the caption is on a new line */
+}
+
+figcaption span {
+    display: block;
+    margin-top: 10px;
+}
+
+/*------------------------Shark-Stories--------------------------*/
+.sharkstories {
+    display: flex;
+    background-color: var(--primary-blue);
+    
+}
+.sharkstories h3 {
+    color: var(--white);
+    font-size: 27px;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+.sharkstories p {
+    color: var(--white);
+    display: flex;
+    flex: 1;
+}
+/*------------------------Why?--------------------------*/
+
+
+
+/*------------------------Questions--------------------------*/
+.questions {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h6 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 27px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;    /* Allows wrapping for small screens */
+    gap: 15px;          /* Adds space between input fields */
+    justify-content: center;
+}
+
+label {
+    font-size: 16px;
+    color: var(--text-color);
+    width: 100%;         /* Make labels take up full width on smaller screens */
+    margin-bottom: 5px;
+}
+input {
+    font-size: 16px;
+    width: 55%;  /* Adjust width to make inputs side by side */
+    box-sizing: border-box;  /* Ensures padding is included in width */
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--light-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;  
+    margin-top: 15px;
+}
+button:hover {
+    background-color: var(--primary-blue);
+}
+
+footer {
+    background-color:var(--primary-blue);
+    color:var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer a {
+    color: var(--white);
+}
+
+/*------------------------LARGE-CSS--------------------------*/
+@media (max-width: 768px) {
+    input {
+        width: 100%;  /* On smaller screens, inputs take up full width */
+    }
+    button {
+        width: 100%;
+    }
+}
