@@ -212,6 +212,28 @@ button:hover {
     display: flex;
     flex: 2;
 }
+.greatwhites, .tigers, .bullsharks {
+    flex: 1;
+    padding: 15px;
+    background-color: var(--white);
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+.greatwhites h2 {
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+}
+.tigers h3 {
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+}
+.bullsharks h4 {
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+}
 
 
 /*------------------------Shark-Stories--------------------------*/
