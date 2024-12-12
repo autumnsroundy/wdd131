@@ -202,6 +202,31 @@ footer a {
     color: var(--white);
 }
 
+.species {
+    display: flex;
+    justify-content: space-between;      /*ensures space between text and image*/
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.species-header {
+    margin-bottom: 10px;
+    background-color: var(--primary-blue);
+    color:var(--white);
+    padding: 20px;
+    box-sizing: border-box; 
+    flex: 1;                /*take as much width as possible*/
+    min-width: 250px; 
+    display: flex;          /* Make the container a flex container */
+    flex-direction: column;
+}
+.species-header h1 {
+    font-size: 27px;
+}
+.species-image {
+    display: flex;
+    flex: 2;
+}
 /*------------------------LARGE-CSS--------------------------*/
 @media (max-width: 768px) {
     input {
