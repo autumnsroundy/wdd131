@@ -45,7 +45,7 @@ nav a:hover {
     color:var(--white);
 }
 
-/*----------completed look above this line-------------*/
+/*------------------------Home--------------------------*/
 
 body {
     font-family: 'Afacad Flux', sans-serif;
@@ -55,8 +55,6 @@ body {
     padding: 20px;
 }
 
-
-/*------------------------Shark-Safety--------------------------*/
 .sharksafety {
     display: flex;
     justify-content: space-between;      /*ensures space between text and image*/
@@ -84,26 +82,26 @@ body {
     text-align: center;          /* Center the image */
     flex: 2;                    /*image takes up 2nd and 3rd columns*/
 }
-/*------------------------Dangerous-Species--------------------------*/
+
 .dangerousspecies {
     text-align: center;
 }
 figure {
     display: inline-block;
-    margin: 30px;           /* Adds margin between the images */
-    text-align: center;     /* Centers the caption */
+    margin: 30px;           
+    text-align: center;     
 }
 figure img {
-    width: 100%;            /* Makes images responsive */
-    max-width: 400px;       /* Limits the maximum size of images */
+    width: 100%;            
+    max-width: 400px;       
     height: auto;
     border-radius: 8px;
 }
 figcaption {
     font-size: 14px;
     color: var(--text-color);
-    margin-top: 10px;       /* Adds space between image and caption */
-    display: block;         /* Ensures each part of the caption is on a new line */
+    margin-top: 10px;       
+    display: block;        
 }
 
 figcaption span {
@@ -111,7 +109,7 @@ figcaption span {
     margin-top: 10px;
 }
 
-/*------------------------Shark-Stories--------------------------*/
+
 .sharkstories {
     display: flex;
     background-color: var(--primary-blue);
@@ -129,17 +127,14 @@ figcaption span {
     display: flex;
     flex: 1;
 }
-/*------------------------Why?--------------------------*/
+
 .why {
-    display: flex; /* This makes the .why container a flexbox container */
-    align-items: flex-start; /* Aligns items at the start of the container */
-    justify-content: space-between; /* Ensures there is space between the content sections */
-    gap: 20px; /* Adds space between the content blocks (optional) */
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 20px;
 }
 
-
-
-/*------------------------Questions--------------------------*/
 .questions {
     max-width: 500px;
     margin: 0 auto;
@@ -190,17 +185,7 @@ button:hover {
     background-color: var(--primary-blue);
 }
 
-footer {
-    background-color:var(--primary-blue);
-    color:var(--white);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-footer a {
-    color: var(--white);
-}
+/*------------------------Dangerous-Species--------------------------*/
 
 .species {
     display: flex;
@@ -226,6 +211,20 @@ footer a {
 .species-image {
     display: flex;
     flex: 2;
+}
+
+
+/*------------------------Shark-Stories--------------------------*/
+footer {
+    background-color:var(--primary-blue);
+    color:var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer a {
+    color: var(--white);
 }
 /*------------------------LARGE-CSS--------------------------*/
 @media (max-width: 768px) {
