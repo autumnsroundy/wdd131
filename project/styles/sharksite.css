@@ -217,6 +217,7 @@ button:hover {
     padding: 15px;
     background-color: var(--white);
     color: var(--text-color);
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 .greatwhites h2 {
@@ -234,7 +235,11 @@ button:hover {
     width: 100%;
     text-align: center;
 }
-
+.encounter h5 {
+    font-size: 27px;
+    width: 100%;
+    text-align: center;
+}
 
 /*------------------------Shark-Stories--------------------------*/
 footer {
