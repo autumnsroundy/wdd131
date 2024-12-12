@@ -130,17 +130,24 @@ figcaption span {
     flex: 1;
 }
 /*------------------------Why?--------------------------*/
+.why {
+    display: flex; /* This makes the .why container a flexbox container */
+    align-items: flex-start; /* Aligns items at the start of the container */
+    justify-content: space-between; /* Ensures there is space between the content sections */
+    gap: 20px; /* Adds space between the content blocks (optional) */
+}
 
 
 
 /*------------------------Questions--------------------------*/
 .questions {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 25px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
 }
 
 h6 {
@@ -161,7 +168,7 @@ label {
     font-size: 16px;
     color: var(--text-color);
     width: 100%;         /* Make labels take up full width on smaller screens */
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 input {
     font-size: 16px;
@@ -177,7 +184,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;  
-    margin-top: 15px;
+    margin-top: 5px;
 }
 button:hover {
     background-color: var(--primary-blue);
