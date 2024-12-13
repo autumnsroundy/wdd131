@@ -82,10 +82,12 @@ body {
     height: auto;
     max-width: 600px;            /*limit image size*/
     text-align: center;          /* Center the image */
-    flex: 2;                    /*image takes up 2nd and 3rd columns*/
+    flex: 2;   
+    margin-top: 5px;
 }
 .dangerousspecies h2 {
     font-size: 27px;
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 .dangerousspecies {
@@ -93,7 +95,7 @@ body {
 }
 figure {
     display: inline-block;
-    margin: 20px;           
+    margin: 30px;           
     text-align: center;     
 }
 figure img {
@@ -115,26 +117,39 @@ figcaption span {
 }
 .sharkstories {
     display: flex;
+    flex-direction: column;  /* Stack the content vertically */
     background-color: var(--light-blue);
+    align-items: center;     /* Center the items horizontally */
     gap: 20px;
-    
+    padding: 20px;
 }
+
 .sharkstories h3 {
     color: var(--white);
-    font-size: 30px;
-    justify-content: center;
-    display: flex;
-    flex: 1;
-    margin-top: 75px;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 .sharkstories p {
+    font-size: 18px;
     color: var(--white);
-    display: flex;
-    flex: 1;
+    text-align: center;  /* Center text */
 }
+.social {
+    display: flex;
+    gap: 40px;            /* Space between icons */
+    justify-content: center;  /* Center the icons horizontally */
+    align-items: center;     /* Center the icons vertically */
+}
+.logo {
+    width: 40px;         
+    height: auto;
+}
+
 .why {
     display: flex;                  
-    justify-content: space-between;                 
+    justify-content: space-between;      
+    margin-top: 20px;           
 }
 .why-one {
     display: flex;                
