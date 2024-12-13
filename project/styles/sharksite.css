@@ -57,7 +57,7 @@ body {
 
 .sharksafety {
     display: flex;
-    justify-content: space-between;      /*ensures space between text and image*/
+    justify-content: space-between; 
     gap: 20px;
     flex-wrap: wrap;
     margin: 20px;
@@ -65,15 +65,17 @@ body {
 .sharksafety .text {
     background-color: var(--primary-blue);
     color:var(--white);
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box; 
-    flex: 1;                /*take as much width as possible*/
+    flex: 1; 
     min-width: 250px; 
-    display: flex;          /* Make the container a flex container */
+    display: flex; 
     flex-direction: column;
 }
 .sharksafety h1 {
-    margin-bottom: 10px; /*space between h1 and text*/
+    font-size: 37px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
 }
 .sharksafety .heroimage {
     width: 100%;
@@ -82,13 +84,16 @@ body {
     text-align: center;          /* Center the image */
     flex: 2;                    /*image takes up 2nd and 3rd columns*/
 }
-
+.dangerousspecies h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
 .dangerousspecies {
     text-align: center;
 }
 figure {
     display: inline-block;
-    margin: 30px;           
+    margin: 20px;           
     text-align: center;     
 }
 figure img {
@@ -98,51 +103,80 @@ figure img {
     border-radius: 8px;
 }
 figcaption {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
     color: var(--text-color);
     margin-top: 10px;       
     display: block;        
 }
-
 figcaption span {
     display: block;
     margin-top: 10px;
 }
-
-
 .sharkstories {
     display: flex;
-    background-color: var(--primary-blue);
+    background-color: var(--light-blue);
+    gap: 20px;
     
 }
 .sharkstories h3 {
     color: var(--white);
-    font-size: 27px;
+    font-size: 30px;
     justify-content: center;
     display: flex;
     flex: 1;
+    margin-top: 75px;
 }
 .sharkstories p {
     color: var(--white);
     display: flex;
     flex: 1;
 }
-
 .why {
-    display: flex; 
-    align-items: flex-start; 
-    justify-content: space-between; 
-    gap: 20px;
+    display: flex;                  
+    justify-content: space-between;  
+    gap: 10px;                  
+}
+.why-one {
+    display: flex;                
+    flex-direction: column;                          
+    flex: 1; 
+}
+.why-two ul {
+    background-color: var(--sage-green);
+    padding: 15px;
+    border-radius: 5px;
+    list-style-type: none;
+    margin-right: 20px;
+}                     
+.why h4 {
+    font-size: 27px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.why p {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.why img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .questions {
     max-width: 500px;
+    height: 200px;
     margin: 0 auto;
     padding: 25px;
-    background-color: #f9f9f9;
+    background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 h6 {
@@ -155,30 +189,30 @@ h6 {
 form {
     display: flex;
     flex-wrap: wrap;    /* Allows wrapping for small screens */
-    gap: 15px;          /* Adds space between input fields */
+    gap: 10px;          /* Adds space between input fields */
     justify-content: center;
 }
 
 label {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--text-color);
     width: 100%;         /* Make labels take up full width on smaller screens */
-    margin-bottom: 15px;
+    margin-bottom: 7px;
 }
 input {
-    font-size: 16px;
-    width: 55%;  /* Adjust width to make inputs side by side */
-    box-sizing: border-box;  /* Ensures padding is included in width */
+    font-size: 14px;
+    width: 75%;  
+    box-sizing: border-box; 
 }
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 10px;
+    font-size: 14px;
     background-color: var(--light-blue);
     color: var(--white);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;  
+    width: 20%;
     margin-top: 5px;
 }
 button:hover {
@@ -189,7 +223,7 @@ button:hover {
 
 .species {
     display: flex;
-    justify-content: space-between;      /*ensures space between text and image*/
+    justify-content: space-between;    
     gap: 20px;
     flex-wrap: wrap;
     margin: 20px;
@@ -200,9 +234,9 @@ button:hover {
     color:var(--white);
     padding: 20px;
     box-sizing: border-box; 
-    flex: 1;                /*take as much width as possible*/
+    flex: 1;              
     min-width: 250px; 
-    display: flex;          /* Make the container a flex container */
+    display: flex;         
     flex-direction: column;
 }
 .species-header h1 {
