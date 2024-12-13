@@ -238,7 +238,7 @@ button:hover {
 .species {
     display: flex;
     justify-content: space-between;    
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
     margin: 20px;
 }
@@ -259,6 +259,7 @@ button:hover {
 .species-image {
     display: flex;
     flex: 2;
+    justify-content: center;
 }
 .greatwhites, .tigers, .bullsharks {
     flex: 1;
