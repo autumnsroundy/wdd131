@@ -134,8 +134,7 @@ figcaption span {
 }
 .why {
     display: flex;                  
-    justify-content: space-between;  
-    gap: 10px;                  
+    justify-content: space-between;                 
 }
 .why-one {
     display: flex;                
@@ -157,13 +156,13 @@ figcaption span {
 }
 .why p {
     text-align: left;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 .why img {
     width: 100%;
     height: auto;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 10px;
 }
 
