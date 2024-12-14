@@ -1,3 +1,5 @@
+
+/*----------------------------------Home----------------------------------*/
 @media (max-width: 1024px) {
     /* For medium-sized screens (tablets, laptops) */
     .sharksafety {
@@ -133,6 +135,7 @@
     }
 }
 
+/*----------------------------------Dangerous Species----------------------------------*/
 @media (max-width: 1024px) {
     .species {
         flex-direction: column;  /* Stack species sections vertically */
@@ -212,5 +215,78 @@
 
     .gws-container img, .ts-img, .bs-map-img {
         width: 100%;
+    }
+}
+
+/*----------------------------------stories----------------------------------*/
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;  /* Smaller gap between content and image */
+    }
+
+    .content h2 {
+        font-size: 22px;
+    }
+
+    .image-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .subscription-form-container {
+        width: 90%;
+        padding: 20px;
+        max-width: 400px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Large screens (greater than 1200px wide) */
+@media (min-width: 1200px) {
+    .content {
+        gap: 30px;  /* Increase the gap between content and image */
+    }
+
+    .storieh h1 {
+        font-size: 42px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .image-container {
+        width: 350px;  /* Adjust image container for larger screens */
+    }
+
+    .subscription-form-container {
+        max-width: 600px;  /* Make the subscription form wider */
+        padding: 40px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        font-size: 18px;  /* Larger font size for inputs */
+    }
+
+    button {
+        font-size: 18px;  /* Larger button font size */
     }
 }
