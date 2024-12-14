@@ -85,13 +85,17 @@ body {
     flex: 2;   
     margin-top: 5px;
 }
-.dangerousspecies h2 {
-    font-size: 27px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
 .dangerousspecies {
     text-align: center;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+.dangerousspecies h2 {
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 figure {
     display: inline-block;
@@ -119,6 +123,7 @@ figcaption span {
     display: flex;
     flex-direction: column;  /* Stack the content vertically */
     background-color: var(--light-blue);
+    border-radius: 5px;
     align-items: center;     /* Center the items horizontally */
     gap: 20px;
     padding: 20px;
@@ -168,11 +173,6 @@ figcaption span {
     margin-top: 20px;
     margin-bottom: 0px;
     text-align: center;
-}
-.why p {
-    text-align: left;
-    margin-left: 15px;
-    margin-right: 10px;
 }
 .why img {
     width: 100%;
@@ -273,37 +273,39 @@ button:hover {
     font-size: 36px;
     width: 100%;
     text-align: center;
+    margin-top: 15px;
+}
+
+.gws-container {
+    display: flex;          
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
 }
 .gws-facts {
+    background-color: var(--sage-green);
+    border-radius: 5px;
+    padding: 20px;
     display: flex;  
-    flex-direction: column;  /* Stack the items vertically */
+    flex-direction: column;
     gap: 5px;  
-    width: 100%;
     text-align: left; 
     font-size: 16px;
+    width: 50%; /* Ensures the facts section takes up half the space */
 }
-.gws-facts-header {
-    text-align: left;
-    margin-bottom: 5px;
-}
-.gws-facts-content {
-    display: flex;  /* Makes the list and the map sit side by side */
-    justify-content: space-between;  /* Places the list on the left and map on the right */
-    align-items: flex-start;  
-    gap: 30px; 
-    width: 100%;
-    margin-top: 10px;
-}
+
 .gws-facts ul {
     list-style-type: none;
     padding-left: 0;
 }
-.gws-map {
-    width: 200px;
+.gws-container img {
+    flex: 2;
+    width: 50%; /* Adjust the map size */
     height: auto;
 }
 .gws-habitat {
     width: 100%; 
+    padding: 20px;
 }
 
 
