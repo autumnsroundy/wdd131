@@ -21,25 +21,21 @@ header {
     color: var(--primary-blue);
     display: flex;
 }
-/*Style for the list*/
 nav ul {
     margin-top: 15px;
     list-style-type: none;
     display: flex;
     justify-content: flex-end; /*Right align the ENTIRE navbar*/
 }
-/*Style for each list item*/
 nav li {
     margin: 0 15px;
 }
-/*Style for the links*/
 nav a {
     color: var(--primary-blue);
     text-decoration: none;
     font-weight: bold;
-    text-align: right; /*Align the text inside the link to the right */
+    text-align: right;
 }
-/*Style for the hover affects*/
 nav a:hover {
     text-decoration: underline;
     color:var(--white);
@@ -55,6 +51,7 @@ body {
     padding: 20px;
 }
 
+/* Style for the "HeroSharkSafety" section */
 .sharksafety {
     display: flex;
     justify-content: space-between; 
@@ -80,11 +77,13 @@ body {
 .sharksafety .heroimage {
     width: 100%;
     height: auto;
-    max-width: 600px;            /*limit image size*/
-    text-align: center;          /* Center the image */
+    max-width: 600px;
+    text-align: center;
     flex: 2;   
     margin-top: 5px;
 }
+
+/* Style for the "DangerousSpecies" section */
 .dangerousspecies {
     text-align: center;
     background-color: var(--white);
@@ -119,6 +118,8 @@ figcaption span {
     display: block;
     margin-top: 10px;
 }
+
+/* Style for the "SharkStories"" section */
 .sharkstories {
     display: flex;
     flex-direction: column;  /* Stack the content vertically */
@@ -128,7 +129,6 @@ figcaption span {
     gap: 20px;
     padding: 20px;
 }
-
 .sharkstories h3 {
     color: var(--primary-blue);
     font-size: 36px;
@@ -138,100 +138,83 @@ figcaption span {
 .sharkstories p {
     font-size: 18px;
     color: var(--primary-blue);
-    text-align: center;  /* Center text */
+    text-align: center;
 }
 .social {
     display: flex;
-    gap: 40px;            /* Space between icons */
-    justify-content: center;  /* Center the icons horizontally */
-    align-items: center;     /* Center the icons vertically */
+    gap: 40px; 
+    justify-content: center;
+    align-items: center; 
 }
 .logo {
     width: 40px;         
     height: auto;
 }
 
+/* Style for the "Why" and "Questions" sections */
+.why-questions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px; 
+}
 .why {
-    display: flex;                  
-    justify-content: space-between;      
-    margin-top: 20px;           
-}
-.why-one {
-    display: flex;                
-    flex-direction: column;                          
-    flex: 1; 
-}
-.why-two ul {
     background-color: var(--light-blue);
     color: var(--white);
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
     list-style-type: none;
-    margin-right: 20px;
-}                     
-.why h4 {
-    color: var(--primary-blue);
-    font-size: 27px;
-    margin-top: 20px;
+    width: 48%; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.questions {
+    width: 48%; 
+    background-color: var(--white);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-height: 300px;
+}
+.why h4, .questions h6 {
+    margin-top: 10px;
     margin-bottom: 0px;
     text-align: center;
+    font-size: 36px;
 }
-.why img {
-    width: 100%;
-    height: auto;
-    margin-top: 35px;
-    margin-bottom: 10px;
-}
-
-.questions {
-    max-width: 500px;
-    height: 200px;
-    margin: 0 auto;
-    padding: 25px;
-    background-color: var(--white);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-h6 {
-    text-align: center;
-    color: var(--text-color);
-    font-size: 27px;
-    margin: 0;
-}
-
-form {
+.questions form {
     display: flex;
-    flex-wrap: wrap;    /* Allows wrapping for small screens */
-    gap: 10px;          /* Adds space between input fields */
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: right; 
+    gap: 5px;
 }
-
-label {
+.questions label,
+.questions input {
+    margin-bottom: 5px;
     font-size: 14px;
     color: var(--text-color);
-    width: 100%;         /* Make labels take up full width on smaller screens */
-    margin-bottom: 7px;
 }
-input {
-    font-size: 14px;
-    width: 75%;  
-    box-sizing: border-box; 
+.questions input {
+    font-size: 16px;
+    width: 100%;
 }
-button {
-    padding: 10px 10px;
+.questions button {
+    padding: 5px;
     font-size: 14px;
     background-color: var(--light-blue);
     color: var(--white);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 20%;
+    width: 100%;
     margin-top: 5px;
 }
-button:hover {
+.questions button:hover {
     background-color: var(--primary-blue);
 }
 
@@ -442,12 +425,138 @@ footer {
 footer a {
     color: var(--white);
 }
-/*------------------------LARGE-CSS--------------------------*/
-@media (max-width: 768px) {
-    input {
-        width: 100%;  /* On smaller screens, inputs take up full width */
+/*------------------------COMPATIBILITY--------------------------*/
+@media (max-width: 1024px) {
+    /* For medium-sized screens (tablets, laptops) */
+    .sharksafety {
+        flex-direction: column;  /* Stack vertically for smaller devices */
     }
-    button {
-        width: 100%;
+
+    .sharksafety .heroimage {
+        max-width: 100%; /* Allow image to scale on smaller screens */
+    }
+
+    .sharksafety .text {
+        min-width: 100%; /* Allow text section to take full width */
+    }
+
+    .why-questions-container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+
+    .why, .questions {
+        width: 100%;  /* Allow both sections to take full width */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .social {
+        flex-direction: column; /* Stack social icons vertically on smaller screens */
+    }
+
+    .social .logo {
+        width: 50px; /* Increase size of logo icons */
+    }
+}
+
+@media (max-width: 768px) {
+    /* For small screens (mobiles) */
+    body {
+        padding: 10px; /* Reduce body padding */
+    }
+
+    header {
+        padding: 10px; /* Reduce padding in the header */
+    }
+
+    .nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center align navigation links */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the nav items vertically */
+        align-items: center; /* Center the items */
+    }
+
+    nav li {
+        margin: 10px 0; /* Add vertical spacing between items */
+    }
+
+    .sharksafety {
+        flex-direction: column;  /* Stack vertically */
+    }
+
+    .sharksafety .text,
+    .sharksafety .heroimage {
+        min-width: 100%; /* Take full width */
+        margin-bottom: 20px; /* Add some space between sections */
+    }
+
+    .dangerousspecies {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .sharkstories h3 {
+        font-size: 28px; /* Smaller font size for heading */
+    }
+
+    .sharkstories p {
+        font-size: 16px; /* Smaller font size for paragraph */
+    }
+
+    .why-questions-container {
+        flex-direction: column;  /* Stack vertically */
+    }
+
+    .why, .questions {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    .questions button {
+        width: 100%; /* Make button take full width */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For very small screens (phones in portrait mode) */
+    body {
+        padding: 5px; /* Reduce padding further */
+    }
+
+    .sharksafety {
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .sharksafety h1 {
+        font-size: 28px; /* Smaller font size */
+    }
+
+    .dangerousspecies h2 {
+        font-size: 28px; /* Smaller font size */
+    }
+
+    .sharkstories h3 {
+        font-size: 24px; /* Smaller font size for headings */
+    }
+
+    .sharkstories p {
+        font-size: 14px; /* Smaller font size for paragraph */
+    }
+
+    .logo {
+        width: 30px; /* Smaller logo icons */
+    }
+
+    .social {
+        flex-direction: column; /* Stack social icons vertically */
+    }
+
+    .why-questions-container {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .questions button {
+        width: 100%; /* Make button take full width */
     }
 }

@@ -61,11 +61,9 @@
                     </a>
                 </div>
             </section>
-            <section class="why">
-                <div class="why-one">
+            <section class="why-questions-container">
+                <section class="why">
                     <h4>Why do Sharks Attack?</h4>
-                </div>
-                <div class="why-two">
                     <ul>
                         <li>1. <strong>Mistaken Identity</strong> - Most attacks on humans are due to the <br>
                             shark mistaking the human for their natural prey.</li><br>
@@ -74,21 +72,18 @@
                         <li>3. <strong>Territoriality</strong> - Sharks are dominant ocean creatures, and <br>
                             are known to be territorial when they sense an unknown potential threat.</li>
                     </ul>
-                </div>
-                <div class="why-three">
-                    <img src="images/feedingfrenzy.png" alt="Shark Jaw">
+                </section>
+                <div class="questions">
+                    <h6>Questions?</h6>
+                    <form action="submit_form.php" method="POST">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </section>
-            <div class="questions">
-                <h6>Questions?</h6>
-                <form action="submit_form.php" method="POST">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
         </main>
         <footer>
             <div class="footer">
