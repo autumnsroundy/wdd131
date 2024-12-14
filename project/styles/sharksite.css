@@ -262,34 +262,80 @@ button:hover {
     justify-content: center;
 }
 .greatwhites, .tigers, .bullsharks {
-    flex: 1;
     padding: 15px;
     background-color: var(--white);
     color: var(--text-color);
     border-radius: 8px;
     margin-bottom: 15px;
 }
+
 .greatwhites h2 {
-    font-size: 27px;
+    font-size: 36px;
     width: 100%;
     text-align: center;
 }
+.gws-facts {
+    display: flex;  
+    flex-direction: column;  /* Stack the items vertically */
+    gap: 5px;  
+    width: 100%;
+    text-align: left; 
+    font-size: 16px;
+}
+.gws-facts-header {
+    text-align: left;
+    margin-bottom: 5px;
+}
+.gws-facts-content {
+    display: flex;  /* Makes the list and the map sit side by side */
+    justify-content: space-between;  /* Places the list on the left and map on the right */
+    align-items: flex-start;  
+    gap: 30px; 
+    width: 100%;
+    margin-top: 10px;
+}
+.gws-facts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.gws-map {
+    width: 200px;
+    height: auto;
+}
+.gws-habitat {
+    width: 100%; 
+}
+
+
 .tigers h3 {
-    font-size: 27px;
+    font-size: 36px;
     width: 100%;
     text-align: center;
 }
+
 .bullsharks h4 {
     font-size: 27px;
     width: 100%;
     text-align: center;
 }
+.encounter {
+    background-color: var(--sage-green);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
 .encounter h5 {
     font-size: 27px;
     width: 100%;
     text-align: center;
+    margin-top: 10px;
 }
-
+.references {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
 /*------------------------Shark-Stories--------------------------*/
 footer {
     background-color:var(--primary-blue);
