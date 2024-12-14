@@ -122,7 +122,7 @@ figcaption span {
 .sharkstories {
     display: flex;
     flex-direction: column;  /* Stack the content vertically */
-    background-color: var(--light-blue);
+    background-color: var(--sage-green);
     border-radius: 5px;
     align-items: center;     /* Center the items horizontally */
     gap: 20px;
@@ -130,14 +130,14 @@ figcaption span {
 }
 
 .sharkstories h3 {
-    color: var(--white);
+    color: var(--primary-blue);
     font-size: 36px;
     margin-top: 15px;
     margin-bottom: 5px;
 }
 .sharkstories p {
     font-size: 18px;
-    color: var(--white);
+    color: var(--primary-blue);
     text-align: center;  /* Center text */
 }
 .social {
@@ -162,13 +162,15 @@ figcaption span {
     flex: 1; 
 }
 .why-two ul {
-    background-color: var(--sage-green);
+    background-color: var(--light-blue);
+    color: var(--white);
     padding: 15px;
     border-radius: 5px;
     list-style-type: none;
     margin-right: 20px;
 }                     
 .why h4 {
+    color: var(--primary-blue);
     font-size: 27px;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -274,6 +276,8 @@ button:hover {
     width: 100%;
     text-align: center;
     margin-top: 15px;
+    margin-bottom: 15px;
+    color: var(--primary-blue);
 }
 
 .gws-container {
@@ -304,7 +308,9 @@ button:hover {
     height: auto;
 }
 .gws-habitat {
-    width: 100%; 
+    background-color: var(--background-color);
+    border-radius: 5px;
+    margin-top: 10px; 
     padding: 20px;
 }
 
@@ -313,30 +319,116 @@ button:hover {
     font-size: 36px;
     width: 100%;
     text-align: center;
+    color: var(--primary-blue);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.ts-container {
+    display: flex; /* Enables flex layout to display content side by side */
+    justify-content: space-between; /* Ensures space between facts and image */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Adds space between the two elements */
+}
+
+.tigers-facts {
+    background-color: var(--sage-green); /* Background for facts section */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    font-size: 16px;
+    width: 72%;
+}
+
+.tigers-facts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ts-img {
+    width: 28%;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 5px;
+}
+
+.ts-habitat {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    margin-top: 10px; 
+    padding: 20px;
 }
 
 .bullsharks h4 {
-    font-size: 27px;
+    font-size: 36px;
     width: 100%;
     text-align: center;
+    color: var(--primary-blue);
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+.bs-gfacts {
+    background-color: var(--sage-green); /* Background for facts section */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.bs-gfacts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.bs-habitat-container {
+    display: flex; /* Use flexbox to lay out the habitat section and map side by side */
+    justify-content: space-between; /* Ensure space between the text and image */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between the text and the map */
+    margin-top: 20px; /* Adds space between the general facts and habitat section */
+}
+
+.bs-habitat {
+    width: 50%; /* Habitat section takes up half the width */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bs-map-img {
+    width: 50%; /* Map image takes up the other half of the width */
+    height: auto;
+    flex-shrink: 0; /* Prevent the map from shrinking */
+}
+
+
 .encounter {
-    background-color: var(--sage-green);
+    background-color: var(--light-blue);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 15px;
+    color: var(--white);
 }
 .encounter h5 {
     font-size: 27px;
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    color: var(--white);
 }
 .references {
     background-color: var(--white);
+    color: var(--primary-blue);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 15px;
+}
+.references h6 {
+    color : var(--primary-blue)
 }
 /*------------------------Shark-Stories--------------------------*/
 footer {

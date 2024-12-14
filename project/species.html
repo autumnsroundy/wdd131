@@ -57,17 +57,19 @@
             </div>
             <div class="tigers">
                 <h3>Tiger Sharks</h3>
-                <section class="tigers-facts">
-                    <img src="images/tigerhome.png" alt="Tiger Shark">
-                    <div class="ts-gfacts-content">
-                        <p><strong>General Facts</strong></p>
-                        <ul>
-                            <li>1. Tiger sharks have vertical stripes or spots running along their body making them distinguishable from other sharks.</li>
-                            <li>2. Their diet consists of invertebrates, seabirds, sea turtles, stingrays, and even smaller sharks.</li>
-                            <li>3. Tiger sharks have been known to be as large as 2,000 pounds and at least 18 ft in length.</li>
-                        </ul>
-                    </div>
-                </section>
+                <div class="ts-container"> <!-- New container for side-by-side layout -->
+                    <section class="tigers-facts">
+                        <div class="ts-gfacts-content">
+                            <p><strong>General Facts</strong></p>
+                            <ul>
+                                <li>1. Tiger sharks have vertical stripes or spots running along their body making them distinguishable from other sharks.</li>
+                                <li>2. Their diet consists of invertebrates, seabirds, sea turtles, stingrays, and even smaller sharks.</li>
+                                <li>3. Tiger sharks have been known to be as large as 2,000 pounds and at least 18 ft in length.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <img src="images/tigerhome.png" alt="Tiger Shark" class="ts-img"> <!-- Added class for styling -->
+                </div>
                 <section class="ts-habitat">
                     <p><strong>Habitat information</strong></p>
                     <p>Tiger sharks are known to stay within coral reefs where there is an abundant food source.
@@ -77,25 +79,24 @@
                 </section>
             </div>
             <div class="bullsharks">
-                <h4>Bull Sharks</h2>
-                <img src="images/bullspecies.png" alt="Bull Shark">
+                <h4>Bull Sharks</h4> <!-- Corrected the closing tag here from <h2> to </h4> -->
+                
                 <section class="bs-gfacts">
                     <p><strong>General Facts</strong></p>
                     <ul>
                         <li>1. Bull sharks have a lifespan between 12 to 16 years.</li>
-                        <li>2. Bull sharks have special glands and functions within their kidney that helps their bodies retain salt while in freshwater. </li>
-                        <li>3. Bull sharks are believed to have the highest Testosterone levels in the animal kingdom.
-                            An adult male human has 2.5 - 9.5 ng/ml where Bull Sharks have been tested to reach 358 ng/ml!</li>
+                        <li>2. Bull sharks have special glands and functions within their kidney that helps their bodies retain salt while in freshwater.</li>
+                        <li>3. Bull sharks are believed to have the highest Testosterone levels in the animal kingdom. An adult male human has 2.5 - 9.5 ng/ml where Bull Sharks have been tested to reach 358 ng/ml!</li>
                     </ul>
                 </section>
-                <section class="bs-habitat">
-                    <p><strong>Habitat information</strong></p>
-                    <p> Bull sharks can be found in coastal waters throughout the world. Specifically in the United States, Bull Sharks are seen mainly in
-                    the East Coast and in the Gulf of Mexico. Unlike other sharks, Bull sharks can survive in freshwater for long periods of time. Bull sharks
-                    have been seen in the Mississippi and Amazon Rivers!
-                </p>
-                </section>
-                <img src="images/tigermap.png" alt="Bull Shark Map">
+                
+                <div class="bs-habitat-container"> <!-- Container for habitat info and map -->
+                    <section class="bs-habitat">
+                        <p><strong>Habitat information</strong></p>
+                        <p> Bull sharks can be found in coastal waters throughout the world. Specifically in the United States, Bull Sharks are seen mainly on the East Coast and in the Gulf of Mexico. Unlike other sharks, Bull sharks can survive in freshwater for long periods of time. Bull sharks have been seen in the Mississippi and Amazon Rivers!</p>
+                    </section>
+                    <img src="images/tigermap.png" alt="Bull Shark Map" class="bs-map-img"> <!-- Added class for styling -->
+                </div>
             </div>
             <div class="encounter">
                 <h5>If Encountered!</h4>
