@@ -1,1 +1,250 @@
+/* Base CSS (Your original styles remain the same) */
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+    /* Navbar */
+    nav ul {
+        flex-direction: column; /* Stack the navbar items vertically */
+        align-items: center;
+    }
+
+    /* Hero Shark Safety Section */
+    .sharksafety {
+        flex-direction: column;
+    }
+    .sharksafety .text, .sharksafety .heroimage {
+        flex: 1 1 100%; /* Make text and image full width */
+        min-width: 100%;
+    }
+
+    /* Dangerous Species Section */
+    .dangerousspecies h2 {
+        font-size: 28px;
+    }
+
+    figure {
+        margin: 15px 0;
+        width: 100%;
+    }
+    figure img {
+        max-width: 100%;
+    }
+
+    /* Shark Stories Section */
+    .sharkstories {
+        padding: 15px;
+    }
+
+    .sharkstories h3 {
+        font-size: 30px;
+    }
+
+    /* Questions and Why Sections */
+    .why-questions-container {
+        flex-direction: column;
+    }
+
+    .why, .questions {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .questions button {
+        font-size: 16px;
+    }
+
+    /* Dangerous Species - Flex Containers */
+    .species, .gws-container, .ts-container, .bs-habitat-container {
+        flex-direction: column;
+    }
+
+    .species-header, .greatwhites h2, .tigers h3, .bullsharks h4 {
+        font-size: 24px;
+    }
+
+    .gws-facts, .tigers-facts, .bs-gfacts {
+        width: 100%;
+    }
+
+    .gws-container img, .ts-img, .bs-map-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Encounter and References Sections */
+    .encounter-references-container {
+        flex-direction: column;
+    }
+
+    .encounter, .references {
+        width: 100%;
+    }
+
+    .references .content {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* Tablet (up to 1024px) */
+@media (max-width: 1024px) {
+    /* Navbar */
+    nav ul {
+        justify-content: center; /* Center the navbar items */
+    }
+
+    /* Hero Shark Safety Section */
+    .sharksafety {
+        flex-direction: column;
+    }
+
+    .sharksafety .text, .sharksafety .heroimage {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    /* Dangerous Species Section */
+    .dangerousspecies h2 {
+        font-size: 30px;
+    }
+
+    figure {
+        margin: 20px;
+        width: 45%;
+    }
+
+    figure img {
+        max-width: 100%;
+    }
+
+    /* Shark Stories Section */
+    .sharkstories h3 {
+        font-size: 32px;
+    }
+
+    .social {
+        gap: 30px;
+    }
+
+    /* Questions and Why Sections */
+    .why-questions-container {
+        flex-direction: column;
+    }
+
+    .why, .questions {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* Dangerous Species - Flex Containers */
+    .species, .gws-container, .ts-container, .bs-habitat-container {
+        flex-direction: column;
+    }
+
+    .species-header, .greatwhites h2, .tigers h3, .bullsharks h4 {
+        font-size: 28px;
+    }
+
+    .gws-facts, .tigers-facts, .bs-gfacts {
+        width: 100%;
+    }
+
+    .gws-container img, .ts-img, .bs-map-img {
+        width: 100%;
+    }
+
+    /* Encounter and References Sections */
+    .encounter-references-container {
+        flex-direction: column;
+    }
+
+    .encounter, .references {
+        width: 100%;
+    }
+
+    .references .content {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Large Screens (above 1024px) */
+@media (min-width: 1025px) {
+    /* Navbar */
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    /* Hero Shark Safety Section */
+    .sharksafety {
+        justify-content: space-between;
+    }
+
+    .sharksafety .text, .sharksafety .heroimage {
+        flex: 1;
+    }
+
+    .sharksafety .text {
+        min-width: 250px;
+    }
+
+    /* Dangerous Species Section */
+    .dangerousspecies h2 {
+        font-size: 36px;
+    }
+
+    figure {
+        width: 48%;
+    }
+
+    .gws-facts, .tigers-facts, .bs-gfacts {
+        width: 50%;
+    }
+
+    .gws-container img, .ts-img, .bs-map-img {
+        width: 50%;
+    }
+
+    /* Shark Stories Section */
+    .sharkstories h3 {
+        font-size: 36px;
+    }
+
+    .social {
+        gap: 40px;
+    }
+
+    /* Questions and Why Sections */
+    .why-questions-container {
+        gap: 20px;
+    }
+
+    /* Dangerous Species - Flex Containers */
+    .species, .gws-container, .ts-container, .bs-habitat-container {
+        flex-direction: row;
+    }
+
+    .species-header, .greatwhites h2, .tigers h3, .bullsharks h4 {
+        font-size: 36px;
+    }
+
+    .gws-facts, .tigers-facts, .bs-gfacts {
+        width: 48%;
+    }
+
+    .references .content {
+        display: flex;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
 
