@@ -464,7 +464,7 @@ figcaption span {
 .content {
     display: flex;
     justify-content: space-between; 
-    align-items: flex-start; 
+    align-items: center; 
     background-color: var(--sage-green);
     border-radius: 5px;
     padding: 20px;
@@ -492,8 +492,43 @@ figcaption span {
     height: auto;  
     border-radius: 8px;       
 }
+.subscription-form-container {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.input-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+input[type="text"],
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
 
+button {
+    background-color: var(--light-blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
 
+button:hover {
+    background-color: var(--primary-blue);
+}
 
 
 
