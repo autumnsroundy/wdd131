@@ -1,8 +1,0 @@
-@media (max-width: 768px) {
-    input {
-        width: 100%;  /* On smaller screens, inputs take up full width */
-    }
-    button {
-        width: 100%;
-    }
-}

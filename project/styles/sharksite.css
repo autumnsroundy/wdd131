@@ -254,6 +254,7 @@ figcaption span {
     margin-bottom: 15px;
 }
 
+/* Style for the "Great White" section */
 .greatwhites h2 {
     font-size: 36px;
     width: 100%;
@@ -262,7 +263,6 @@ figcaption span {
     margin-bottom: 15px;
     color: var(--primary-blue);
 }
-
 .gws-container {
     display: flex;          
     justify-content: space-between;
@@ -280,7 +280,6 @@ figcaption span {
     font-size: 16px;
     width: 50%; /* Ensures the facts section takes up half the space */
 }
-
 .gws-facts ul {
     list-style-type: none;
     padding-left: 0;
@@ -297,7 +296,7 @@ figcaption span {
     padding: 20px;
 }
 
-
+/* Style for the "Tiger" section */
 .tigers h3 {
     font-size: 36px;
     width: 100%;
@@ -312,7 +311,6 @@ figcaption span {
     align-items: flex-start; /* Align items at the top */
     gap: 20px; /* Adds space between the two elements */
 }
-
 .tigers-facts {
     background-color: var(--sage-green); /* Background for facts section */
     border-radius: 5px;
@@ -324,19 +322,16 @@ figcaption span {
     font-size: 16px;
     width: 72%;
 }
-
 .tigers-facts ul {
     list-style-type: none;
     padding-left: 0;
 }
-
 .ts-img {
     width: 28%;
     height: auto;
     flex-shrink: 0;
     margin-bottom: 5px;
 }
-
 .ts-habitat {
     background-color: var(--background-color);
     border-radius: 5px;
@@ -344,6 +339,7 @@ figcaption span {
     padding: 20px;
 }
 
+/* Style for the "Bull" section */
 .bullsharks h4 {
     font-size: 36px;
     width: 100%;
@@ -353,7 +349,7 @@ figcaption span {
     margin-bottom: 15px;
 }
 .bs-gfacts {
-    background-color: var(--sage-green); /* Background for facts section */
+    background-color: var(--sage-green);
     border-radius: 5px;
     padding: 20px;
     display: flex;
@@ -362,46 +358,50 @@ figcaption span {
     text-align: left;
     font-size: 16px;
 }
-
 .bs-gfacts ul {
     list-style-type: none;
     padding-left: 0;
 }
-
 .bs-habitat-container {
     display: flex; /* Use flexbox to lay out the habitat section and map side by side */
-    justify-content: space-between; /* Ensure space between the text and image */
-    align-items: flex-start; /* Align items to the top */
-    gap: 20px; /* Space between the text and the map */
-    margin-top: 20px; /* Adds space between the general facts and habitat section */
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; 
+    margin-top: 20px; 
 }
-
 .bs-habitat {
     width: 50%; /* Habitat section takes up half the width */
     font-size: 16px;
     line-height: 1.6;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 5px;
 }
-
 .bs-map-img {
     width: 50%; /* Map image takes up the other half of the width */
     height: auto;
     flex-shrink: 0; /* Prevent the map from shrinking */
 }
 
-
+/* Style for the "Encounter and References" sections */
+.encounter-references-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
 .encounter {
     background-color: var(--light-blue);
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 15px;
     color: var(--white);
+    width: 48%; 
 }
 .encounter h5 {
     font-size: 27px;
-    width: 100%;
     text-align: center;
-    margin-top: 10px;
     color: var(--white);
+    margin-top: 10px;
 }
 .references {
     background-color: var(--white);
@@ -409,10 +409,24 @@ figcaption span {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 15px;
+    width: 48%; 
 }
 .references h6 {
-    color : var(--primary-blue)
+    color: var(--primary-blue);
+    font-size: 27px; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
 }
+.references a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+.references a:hover {
+    text-decoration: underline;
+}
+
 /*------------------------Shark-Stories--------------------------*/
 footer {
     background-color:var(--primary-blue);
@@ -558,5 +572,18 @@ footer a {
 
     .questions button {
         width: 100%; /* Make button take full width */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .encounter-references-container {
+        flex-direction: column;  /* Stack sections vertically on smaller screens */
+        gap: 20px;  /* Space between the sections */
+    }
+
+    .encounter, .references {
+        width: 100%;  /* Full width on smaller screens */
     }
 }
