@@ -147,7 +147,7 @@ figcaption span {
     align-items: center; 
 }
 .logo {
-    width: 40px;         
+    width: 100%;         
     height: auto;
 }
 
@@ -186,26 +186,23 @@ figcaption span {
     text-align: center;
     font-size: 36px;
 }
-
 .questions form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align form elements to the start of the container */
+    align-items: flex-start;
     gap: 5px;
 }
-
 .questions input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    margin-bottom: 3px; /* Reduce the space between input fields and button */
+    margin-bottom: 3px; 
 }
-
 .questions button {
-    padding: 10px; /* Increased padding for button */
+    padding: 10px; 
     font-size: 14px;
     background-color: var(--light-blue);
     color: var(--white);
@@ -213,9 +210,8 @@ figcaption span {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
-    margin-top: 5px; /* Slightly reduce space between input fields and button */
+    margin-top: 5px;
 }
-
 .questions button:hover {
     background-color: var(--primary-blue);
 }
