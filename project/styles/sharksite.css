@@ -575,15 +575,84 @@ footer a {
     }
 }
 
+@media (max-width: 1024px) {
+    .species {
+        flex-direction: column;  /* Stack species sections vertically */
+        gap: 20px;
+    }
 
+    .species-header, .species-image, .greatwhites, .tigers, .bullsharks {
+        width: 100%;
+    }
 
+    .gws-container, .ts-container, .bs-habitat-container {
+        flex-direction: column;
+    }
+
+    .gws-facts, .tigers-facts, .bs-habitat {
+        width: 100%;
+    }
+
+    .gws-container img, .ts-img, .bs-map-img {
+        width: 100%;  /* Ensure images take full width */
+    }
+}
+
+/* For Mobile Devices (768px and below) */
 @media (max-width: 768px) {
+    .species {
+        flex-direction: column;  /* Stack sections vertically */
+        gap: 15px;
+    }
+
+    .species-header {
+        font-size: 24px;  /* Adjust header font size */
+    }
+
+    .species-header h1 {
+        font-size: 22px;
+    }
+
+    .gws-facts, .tigers-facts, .bs-gfacts {
+        font-size: 14px;  /* Adjust font size for readability */
+    }
+
+    .references a {
+        font-size: 14px;  /* Adjust font size of links */
+    }
+
     .encounter-references-container {
-        flex-direction: column;  /* Stack sections vertically on smaller screens */
-        gap: 20px;  /* Space between the sections */
+        flex-direction: column;  /* Stack Encounter and References */
     }
 
     .encounter, .references {
-        width: 100%;  /* Full width on smaller screens */
+        width: 100%;  /* Take full width on mobile */
+    }
+}
+
+/* For Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .species-header h1 {
+        font-size: 18px;  /* Make header font smaller */
+    }
+
+    .encounter h5 {
+        font-size: 22px;  /* Adjust font size */
+    }
+
+    .references h6 {
+        font-size: 22px;  /* Adjust font size */
+    }
+
+    .gws-facts, .tigers-facts, .bs-gfacts {
+        font-size: 13px;  /* Adjust font size further */
+    }
+
+    .ts-img, .bs-map-img {
+        width: 100%;  /* Make images take full width on small screens */
+    }
+
+    .gws-container img, .ts-img, .bs-map-img {
+        width: 100%;
     }
 }
