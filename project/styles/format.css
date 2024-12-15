@@ -1,0 +1,196 @@
+/*------Media-Queries-for-Home-----------------------*/
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;  /* Stack nav items vertically */
+        justify-content: center;
+        align-items: center;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+    .sharksafety {
+        flex-direction: column;  /* Stack elements vertically */
+        gap: 10px;
+    }
+    .sharksafety .text {
+        min-width: 100%;
+        padding: 20px;
+    }
+    .sharksafety .heroimage {
+        max-width: 100%;
+    }
+    .dangerousspecies h2 {
+        font-size: 28px;
+    }
+    .sharkstories h3 {
+        font-size: 28px;
+    }
+    .sharkstories p {
+        font-size: 16px;
+    }
+    .social {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .why-questions-container {
+        flex-direction: column;
+    }
+    .why, .questions {
+        width: 100%; /* Full width on small screens */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .why h4, .questions h6 {
+        font-size: 28px;
+    }
+    .questions input, .questions button {
+        width: 100%;
+    }
+    footer {
+        padding: 10px;
+    }
+}
+/*------Media-Queries-for-Species-----------------------*/
+@media only screen and (max-width: 768px) {
+    .species {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .species .text {
+        min-width: 100%;
+        padding: 20px;
+    }
+    .species .heroimage {
+        max-width: 100%;
+    }
+    .greatwhites h2 {
+        font-size: 28px;
+    }
+    .gws-container {
+        flex-direction: column;
+    }
+    .gws-facts {
+        width: 100%;
+        font-size: 14px;
+    }
+    .gws-container img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .tigers h3 {
+        font-size: 28px;
+    }
+    .ts-container {
+        flex-direction: column;
+    }
+    .tigers-facts {
+        width: 100%;
+    }
+    .ts-container img {
+        width: 100%;
+        height: auto;
+    }
+    .bullsharks h4 {
+        font-size: 28px;
+    }
+    .bs-facts {
+        width: 100%;
+        font-size: 14px;
+    }
+    .bs-habitat-container {
+        flex-direction: column;
+    }
+    .bs-habitat {
+        width: 100%;
+    }
+    .bs-map-img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .encounter-references-container {
+        flex-direction: column;
+    }
+    .encounter-references-container .encounter, .encounter-references-container .references {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .encounter-references-container .encounter h5, 
+    .encounter-references-container .references h6 {
+        font-size: 24px;
+    }
+    .encounter-references-container .references .content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .encounter-references-container .references ul {
+        width: 100%;
+    }
+    .encounter-references-container .references img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+/*------Media-Queries-for-Stories-----------------------*/
+@media only screen and (max-width: 768px) {
+    .stories h1 {
+        font-size: 28px;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .stories .content {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .stories .content h2 {
+        font-size: 24px;
+    }
+    .stories .content p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .stories .image-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .stories .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .blog-subscription .subscription-form-container {
+        padding: 20px;
+        width: 100%;
+    }
+    .blog-subscription .input-group {
+        width: 100%;
+    }
+    .blog-subscription input[type="text"],
+    .blog-subscription input[type="email"] {
+        width: 100%;
+        font-size: 14px;
+    }
+    .blog-subscription button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+/*------Media-Queries-for-Contact-----------------------*/
+@media only screen and (max-width: 768px) {
+    .contactheader {
+        font-size: 24px;
+        padding: 15px;
+    }
+    .contactimg {
+        width: 100%;
+        height: auto;
+    }
+    .contactlist {
+        padding: 15px;
+        font-size: 16px;
+    }
+    .contactlist ul {
+        padding-left: 0;
+    }
+}
