@@ -407,7 +407,7 @@ figcaption span {
     justify-content: space-between;
     gap: 20px; 
 }
-.encounter-references-container .encounter {
+.encounter {
     background-color: var(--light-blue);
     border-radius: 5px;
     padding: 20px;
@@ -415,12 +415,12 @@ figcaption span {
     color: var(--white);
     width: 48%; 
 }
-.encounter-references-container .encounter h5 {
+.encounter h5 {
     font-size: 27px;
     text-align: center;
     margin-top: 10px;
 }
-.encounter-references-container .references {
+.references {
     background-color: var(--white);
     color: var(--primary-blue);
     border-radius: 5px;
@@ -431,36 +431,36 @@ figcaption span {
     flex-direction: column; 
     gap: 20px; 
 }
-.encounter-references-container .references h6 {
+.references h6 {
     font-size: 27px; 
     margin-top: 10px;
     text-align: center;
     width: 100%; 
     display: block; 
 }
-.encounter-references-container .references .content {
+.references .content {
     display: flex;      
     gap: 20px;     
 }
-.encounter-references-container .references ul {
+.references ul {
     margin-bottom: 15px;
     width: 60%; 
 }
-.encounter-references-container .references .image-container {
+.references .image-container {
     display: flex;  
     justify-content: flex-end; 
     flex-shrink: 0; 
 }
-.encounter-references-container .references img {
+.references img {
     width: 250px;  
     height: auto; 
 }
-.encounter-references-container .references a {
+.references a {
     color: var(--primary-blue);
     text-decoration: none;
     font-weight: bold;
 }
-.encounter-references-container .references a:hover {
+.references a:hover {
     color: var(--light-blue);
     text-decoration: underline;
 }
