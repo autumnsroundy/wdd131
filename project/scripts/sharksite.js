@@ -1,3 +1,8 @@
+// Dynamically populate the current year
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+// Dynamically populate the last modified date
+document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
 
 document.getElementById("subscription-form").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission to the server
@@ -20,12 +25,3 @@ document.getElementById("subscription-form").addEventListener("submit", function
         message.style.color = "#dc3545";  // Red error message
     }
 });
-
-
-
-
-// Dynamically populate the current year
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-// Dynamically populate the last modified date
-document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;

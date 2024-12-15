@@ -25,7 +25,7 @@ nav ul {
     margin-top: 15px;
     list-style-type: none;
     display: flex;
-    justify-content: flex-end; /*Right align the ENTIRE navbar*/
+    justify-content: right; /*Right align the ENTIRE navbar*/
 }
 nav li {
     margin: 0 15px;
@@ -37,12 +37,8 @@ nav a {
     text-align: right;
 }
 nav a:hover {
-    text-decoration: underline;
     color:var(--white);
 }
-
-/*------------------------Home--------------------------*/
-
 body {
     font-family: 'Afacad Flux', sans-serif;
     background-color: var(--background-color);
@@ -50,7 +46,19 @@ body {
     margin: 0;
     padding: 20px;
 }
+footer {
+    background-color:var(--primary-blue);
+    color:var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer a {
+    color: var(--white);
+}
 
+/*------------------------Home--------------------------*/
 /* Style for the "HeroSharkSafety" section */
 .sharksafety {
     display: flex;
@@ -95,6 +103,7 @@ body {
     font-size: 36px;
     margin-top: 25px;
     margin-bottom: 10px;
+    color: var(--primary-blue);
 }
 figure {
     display: inline-block;
@@ -108,8 +117,8 @@ figure img {
     border-radius: 8px;
 }
 figcaption {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
     color: var(--text-color);
     margin-top: 10px;       
     display: block;        
@@ -163,11 +172,15 @@ figcaption span {
     color: var(--white);
     padding: 20px;
     border-radius: 5px;
-    list-style-type: none;
     width: 48%; 
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 18px;
+}
+.why ul {
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
 }
 .questions {
     width: 48%; 
@@ -221,30 +234,35 @@ figcaption span {
 
 .species {
     display: flex;
-    justify-content: space-between;    
-    gap: 10px;
+    justify-content: space-between; 
+    gap: 20px;
     flex-wrap: wrap;
     margin: 20px;
 }
-.species-header {
-    margin-bottom: 10px;
+.species .text {
     background-color: var(--primary-blue);
     color:var(--white);
-    padding: 20px;
+    padding: 30px;
     box-sizing: border-box; 
-    flex: 1;              
+    flex: 1; 
     min-width: 250px; 
-    display: flex;         
+    display: flex; 
     flex-direction: column;
 }
-.species-header h1 {
-    font-size: 27px;
+.species h1 {
+    font-size: 37px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
 }
-.species-image {
-    display: flex;
-    flex: 2;
-    justify-content: center;
+.species .heroimage {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    text-align: center;
+    flex: 2;   
+    margin-top: 5px;
 }
+
 .greatwhites, .tigers, .bullsharks {
     padding: 15px;
     background-color: var(--white);
@@ -325,17 +343,16 @@ figcaption span {
     list-style-type: none;
     padding-left: 0;
 }
-.ts-img {
-    width: 35%;
-    height: auto;
-    flex-shrink: 0;
-    margin-bottom: 5px;
-}
 .ts-habitat {
     background-color: var(--background-color);
     border-radius: 5px;
     margin-top: 10px; 
     padding: 20px;
+}
+.ts-container img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 /* Style for the "Bull" section */
@@ -347,7 +364,7 @@ figcaption span {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.bs-gfacts {
+.bs-facts {
     background-color: var(--sage-green);
     border-radius: 5px;
     padding: 20px;
@@ -357,7 +374,7 @@ figcaption span {
     text-align: left;
     font-size: 16px;
 }
-.bs-gfacts ul {
+.bs-facts ul {
     list-style-type: none;
     padding-left: 0;
 }
@@ -377,10 +394,11 @@ figcaption span {
     border-radius: 5px;
 }
 .bs-map-img {
-    width: 50%;
+    max-width: 100%;
     height: auto;
-    flex-shrink: 0; /* Prevent the map from shrinking */
+    margin-bottom: 10px;
 }
+
 
 /* Style for the "Encounter and References" sections */
 .encounter-references-container {
@@ -399,9 +417,7 @@ figcaption span {
 .encounter h5 {
     font-size: 27px;
     text-align: center;
-    color: var(--white);
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 .references {
     background-color: var(--white);
@@ -415,10 +431,8 @@ figcaption span {
     gap: 20px; 
 }
 .references h6 {
-    color: var(--primary-blue);
     font-size: 27px; 
     margin-top: 10px;
-    margin-bottom: 15px;
     text-align: center;
     width: 100%; 
     display: block; 
@@ -428,7 +442,6 @@ figcaption span {
     gap: 20px;     
 }
 .references ul {
-    margin-top: 15px;
     margin-bottom: 15px;
     width: 60%; 
 }
@@ -447,20 +460,20 @@ figcaption span {
     font-weight: bold;
 }
 .references a:hover {
+    color: var(--light-blue);
     text-decoration: underline;
 }
 
 /*------------------------Shark-Stories--------------------------*/
-.storieh {
+.stories h1 {
     background-color: var(--primary-blue);
     padding: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
-}
-.storieh h1 {
     font-size: 37px;
     color: var(--white);
 }
-.content {
+.stories .content {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -470,28 +483,28 @@ figcaption span {
     gap: 20px; 
     margin-bottom: 10px;
 }
-.content h2 {
+.stories .content h2 {
     font-size: 27px; 
     color: var(--text-color);
     width: 100%;
 }
-.content p {
+.stories .content p {
     font-size: 16px;       
     color: var(--text-color);     
     text-align: justify;       
 }
-.image-container {
+.stories .image-container {
     flex-shrink: 0;             
     width: 300px;        
     display: flex;             
     justify-content: center;
 }
-.image-container img {
+.stories .image-container img {
     width: 100%;          
     height: auto;  
     border-radius: 8px;       
 }
-.subscription-form-container {
+.blog-subscription .subscription-form-container {
     background-color: var(--white);
     padding: 30px;
     border-radius: 8px;
@@ -499,12 +512,12 @@ figcaption span {
     text-align: center;
     margin-bottom: 15px;
 }
-.input-group {
+.blog-subscription .input-group {
     margin-bottom: 10px;
     text-align: left;
 }
-input[type="text"],
-input[type="email"] {
+.blog-subscription input[type="text"],
+.blog-subscription input[type="email"] {
     width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -512,7 +525,7 @@ input[type="email"] {
     font-size: 16px;
 }
 
-button {
+.blog-subscription button {
     background-color: var(--light-blue);
     color: white;
     padding: 10px 20px;
@@ -523,17 +536,18 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.blog-subscription button:hover {
     background-color: var(--primary-blue);
 }
 
 /*------------------------Contact-Us--------------------------*/
-.contacth {
+.contactheader {
     background-color: var(--primary-blue);
     color: var(--white);
-    padding: 20px;
-    border-radius: 5px;
     text-align: center;
+    font-size: 27px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 .contactimg {
     width: 100%;
@@ -552,14 +566,3 @@ button:hover {
 }
 
 
-footer {
-    background-color:var(--primary-blue);
-    color:var(--white);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-footer a {
-    color: var(--white);
-}
