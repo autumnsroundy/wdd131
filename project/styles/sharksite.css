@@ -535,6 +535,9 @@ button:hover {
     border-radius: 5px;
     text-align: center;
 }
+.contactimg {
+    width: 100%;
+}
 .contactlist {
     text-align: center;
     background-color: var(--white);
