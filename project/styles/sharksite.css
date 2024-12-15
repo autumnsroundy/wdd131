@@ -527,8 +527,26 @@ button:hover {
     background-color: var(--primary-blue);
 }
 
-
-
+/*------------------------Contact-Us--------------------------*/
+.contacth {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.contactlist {
+    text-align: center;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contactlist ul {
+    list-style-type: none;
+}
 
 
 footer {
