@@ -204,7 +204,6 @@ figcaption span {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     gap: 5px;
 }
 .questions input {
@@ -212,11 +211,12 @@ figcaption span {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    margin-bottom: 15px; 
-    width: 95%;
+    margin-bottom: 15px;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 .questions button {
-    padding: 10px; 
+    padding: 10px;
     font-size: 14px;
     background-color: var(--light-blue);
     color: var(--white);
@@ -229,6 +229,7 @@ figcaption span {
 .questions button:hover {
     background-color: var(--primary-blue);
 }
+
 
 
 /*------------------------Dangerous-Species--------------------------*/

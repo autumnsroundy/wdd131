@@ -79,14 +79,19 @@
                 </section>
                 <div class="questions">
                     <h6>Questions?</h6>
-                    <form action="submit_form.php" method="POST">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required><br>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                    <form id="subscription-form">
+                        <div class="input-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="input-group">
+                            <label for="question">Question:</label>
+                            <input type="text" id="text" name="text" required placeholder="Enter your question">
+                        </div>
                         <button type="submit">Submit</button>
+                        <p id="message"></p>
                     </form>
-                </div>
+                </div>                
             </section>
         </main>
         <footer>
